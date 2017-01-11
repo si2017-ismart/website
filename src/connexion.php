@@ -16,7 +16,7 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="http://localhost/projet_intensif/src/catalogue.php">WebSiteName</a>
+      <a class="navbar-brand" href="http://localhost/projet_intensif/src/catalogue.php">WeGuide</a>
     </div>
     <ul class="nav navbar-nav">
       <li><a href="http://localhost/projet_intensif/src/enregistrement.php">Inscription</a></li>
@@ -31,23 +31,23 @@ Bienvenue sur la page d'administration de WeGuide
 </h3>
 </div>
 <div class="container">
- <form class="form-horizontal" method="post" name="select_inscription" onSubmit="return sendRequest()">
-               <div class="form-group">
+ <form class="form-horizontal" method="post" action="http://localhost/projet_intensif/src/select_inscription.php" onSubmit="return sendRequest()">
+                <div class="form-group">
                     <label class="control-label col-sm-2" for="identifiant">Identifiant :</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" name="identifiant" placeholder="Identifiant">
                     </div>
-               </div>
-               <div class="form-group">
-                    <label class="control-label col-sm-2" for="mot de passe">Mot de passe :</label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="mot_de_passe">Mot de passe :</label>
                     <div class="col-sm-10">
                         <input type="password" class="form-control" name="mot_de_passe" placeholder="Mot de passe">
                     </div>
-               </div>
-               <div class="text-center">
+                </div>
+                <div class="text-center">
                     <button type="submit" class="btn btn-default">Submit</button>
                 </div>
-          </form>
+  </form>
           </div>
      </body>  
 </html>

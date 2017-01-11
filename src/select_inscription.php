@@ -1,25 +1,65 @@
-<?php 
-//echo "Exécution de la fonction....................";
+<?php
 
-if(isset($_POST['nom'])   && !empty($_POST['nom'])     &&
- isset($_POST['prenom'])  && !empty($_POST['prenom'])  && 
- isset($_POST['adresse']) && !empty($_POST['adresse']) && 
- isset($_POST['cp'])      && !empty($_POST['cp'])      &&
- isset($_POST['ville'])   && !empty($_POST['ville'])   &&
- isset($_POST['pays'])    && !empty($_POST['pays'])    ){
+$data = array(
+		'nom'=>$_POST['nom'],
+		'adresse'=>$_POST['adresse'],
+		'ville'=>$_POST['ville'],
+		'pays'=>$_POST['pays'],
+		'zip'=>$_POST['zip'],
+		'tel'=>$_POST['tel'],
+		'mail'=>$_POST['mail']
+		);
 
-//echo "Exécution de la fonction";
+var_dump($data);
 
-$req = "SELECT inscription('".$_POST['nom']."','".$_POST['prenom']."','".$_POST['adresse']."','".$_POST['cp']."','".$_POST['ville']."','".$_POST['pays']."')";
-       
-$conn = pg_connect("host=postgres dbname=livres user=lecottier password=lecottier")or die("pb_connexion".pg_last_error());
+$opts2 = array(
+  'http'=>array(
+    'method' =>"POST",
+    'header' =>"Content-type: application/json\r\n"."Accept: application/json\r\n",
+    'content'=>json_encode($data)
+  )
+);
 
-$query=pg_query($conn,$req);
+$url1 = "http://localhost:3000/api/beacons";
+$url  = "http://localhost:3000/api/etablissements/add";
+$url_interv  = "http://localhost:3000/api/intervenants/add";
 
-echo pg_fetch_result($query, 0);    
+$context  = stream_context_create($opts2);
 
-pg_free_result($query);
-pg_close($conn);
+var_dump($context);
 
-}
+$res  = file_get_contents(
+			   $url, 
+               false, 
+               $context);
+
+$res = json_decode($res);
+var_dump($res); //id ou erreur TODO
+
+$data_eta = array(
+		'id'=>$res,
+		'password'=>$_POST['password'],
+		'identifiant'=>$_POST['mail']
+		);
+
+var_dump($data_eta);
+
+$opts22 = array(
+  'http'=>array(
+    'method' =>"POST",
+    'header' =>"Content-type: application/json\r\n"."Accept: application/json\r\n",
+    'content'=>json_encode($data_eta)
+  )
+);
+
+$url3  = "http://localhost:3000/api/etablissements/createAdmin";
+
+$context_eta  = stream_context_create($opts22);
+
+$res  = file_get_contents(
+			   $url3, 
+               false, 
+               $context_eta);
+
+var_dump($res);
 ?>

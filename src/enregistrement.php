@@ -14,7 +14,7 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="http://localhost/projet_intensif/src/catalogue.php">WebSiteName</a>
+      <a class="navbar-brand" href="http://localhost/projet_intensif/src/catalogue.php">WeGuide</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="http://localhost/projet_intensif/src/enregistrement.php">Inscription</a></li>
@@ -29,7 +29,7 @@ Bienvenue sur la page d'administration de WeGuide
 </h3>
 </div>
 <div class="container">
-      <form class="form-horizontal" method="post" name="select_inscription" onSubmit="return sendRequest()">
+      <form class="form-horizontal" method="post" action="select_inscription.php" onSubmit="return sendRequest()">
                <div class="form-group">
                     <label class="control-label col-sm-2" for="nom" >Nom de l'établissement:</label>
                     <div class="col-sm-10">
@@ -61,15 +61,27 @@ Bienvenue sur la page d'administration de WeGuide
                     </div>
                </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="prenom">Téléphone :</label>
+                    <label class="control-label col-sm-2" for="tel">Téléphone :</label>
                     <div class="col-sm-10">
-                    <input type="telephone" class="form-control" name="telephone" placeholder="Téléphone">
+                    <input type="tel" class="form-control" name="tel" placeholder="Téléphone">
                     </div>
                </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="email">Email :</label>
+                    <label class="control-label col-sm-2" for="mail">Email :</label>
                     <div class="col-sm-10">
-                    <input type="email" class="form-control" name="email" placeholder="Email">
+                    <input type="mail" class="form-control" name="mail" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="id_etablissement">Id établissement :</label>
+                    <div class="col-sm-10">
+                    <input type="id_etablissement" class="form-control" name="id_etablissement" placeholder="Id établissement">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Mot de passe :</label>
+                    <div class="col-sm-10">
+                    <input type="password" class="form-control" name="password" placeholder="Mot de passe">
                     </div>
                </div>
                 <div class="text-center">
@@ -79,6 +91,3 @@ Bienvenue sur la page d'administration de WeGuide
         </div>
      </body>  
 </html>
-
-<!-- zeriuzeroi -->
-

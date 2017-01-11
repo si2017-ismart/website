@@ -14,11 +14,11 @@
 <nav class="navbar navbar-default themeRouge">
   <div class="container-fluid" >
     <div class="navbar-header">
-      <a class="navbar-brand" href="http://localhost/projet_intensif/src/catalogue.php" style="color:#FFFFFF" style="font-family:verdana;">WeGuide</a>
+      <a class="navbar-brand" href="http://localhost/projet_intensif/src/etablissement.php" style="color:#FFFFFF" style="font-family:verdana;">WeGuide</a>
     </div>
     <ul class="nav navbar-nav" >
-      <li><a href="http://localhost/projet_intensif/src/enregistrement.php" style="color:#FFFFFF">Inscription</a></li>
-      <li><a href="http://localhost/projet_intensif/src/connexion.php" style="color:#FFFFFF">Connexion</a></li>
+      <li><a href="http://localhost/projet_intensif/src/ajouter_intervenant.php" style="color:#FFFFFF">Ajouter un intervenant</a></li>
+      <li><a href="http://localhost/projet_intensif/src/ajouter_beacon.php" style="color:#FFFFFF">Ajouter un beacon</a></li>
     </ul>
   </div>
 </nav>  

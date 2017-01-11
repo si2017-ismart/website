@@ -1,7 +1,16 @@
 <?php
 
+session_start();
+if (isset($_SESSION["etablissement"]["id"])){
+	$id_etablissement = $_SESSION["etablissement"]["id"];
+}
+else{
+	header('Location: http://localhost/projet_intensif/view/catalogue.php');
+  	exit();
+}
+
 $data_intervenant = array(
-		'id'=>'58760d6779d119080d6dd8dd',
+		'id'=>$id_etablissement,
 		'nom'=>$_POST['nom'],
 		'prenom'=>$_POST['prenom'],
 		'identifiant'=>$_POST['id'],
@@ -30,5 +39,8 @@ $res_intervenant  = file_get_contents(
 	               $context_intervenant);
 
 var_dump($res_intervenant);
+
+ header('Location: http://localhost/projet_intensif/view/intervenants.php');
+ exit();
 
 ?>

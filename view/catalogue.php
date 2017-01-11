@@ -5,8 +5,8 @@
     <meta name="AUTHOR" content="Maxime Lecottier">
     <meta name="DESCRIPTION" content="script php postgres">
     <meta name="KEYWORDS" content="Lecottier, informatique, ENSICAEN">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="catalogue.css" rel="stylesheet">
+    <link href="../webroot/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../webroot/css/catalogue.css" rel="stylesheet">
     <title>Admin</title>
 </head>
 <body>
@@ -14,11 +14,11 @@
 <nav class="navbar navbar-default themeRouge">
   <div class="container-fluid" >
     <div class="navbar-header">
-      <a class="navbar-brand" href="http://localhost/projet_intensif/src/etablissement.php" style="color:#FFFFFF" style="font-family:verdana;">WeGuide</a>
+      <a class="navbar-brand" href="http://localhost/projet_intensif/view/catalogue.php" style="color:#FFFFFF" style="font-family:verdana;">WeGuide</a>
     </div>
     <ul class="nav navbar-nav" >
-      <li><a href="http://localhost/projet_intensif/src/intervenants.php" style="color:#FFFFFF">Intervenants</a></li>
-      <li><a href="http://localhost/projet_intensif/src/beacons.php" style="color:#FFFFFF">Beacons</a></li>
+      <li><a href="http://localhost/projet_intensif/view/enregistrement.php" style="color:#FFFFFF">Inscription</a></li>
+      <li><a href="http://localhost/projet_intensif/view/connexion.php" style="color:#FFFFFF">Connexion</a></li>
     </ul>
   </div>
 </nav>  
@@ -31,11 +31,7 @@ Bienvenue sur la page d'administration de WeGuide
 </div>
 </nav>
 <div class="text-center">
-    <img src="../img/logo_mini.png" alt="Logo WeGuide"/>
+    <img src="../webroot/img/logo_mini.png" alt="Logo WeGuide"/>
 </div>
-<footer>
-<nav class="navbar navbar-default" style="background-color: #Ac1325;">
-</nav>  
-</footer>
 </body>
 </html>

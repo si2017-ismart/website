@@ -68,7 +68,7 @@ if ($res_eta){
 	if(!isset($_SESSION["etablissement"]["id"])){
 		$_SESSION["etablissement"]["id"] = $res;
 	}
-  	header('Location: http://localhost/projet_intensif/src/etablissement.php');
+  	header('Location: http://localhost/projet_intensif/view/etablissement.php');
   	exit();
 }
 ?>

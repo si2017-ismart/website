@@ -5,8 +5,8 @@
     <meta name="AUTHOR" content="Maxime Lecottier">
     <meta name="DESCRIPTION" content="script php postgres">
     <meta name="KEYWORDS" content="Lecottier, informatique, ENSICAEN">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="ajax.js"></script>
+    <link href="../webroot/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../webroot/css/catalogue.css" rel="stylesheet">
     <title>Admin</title>
 </head>
 <body>
@@ -14,11 +14,11 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="http://localhost/projet_intensif/src/catalogue.php">WeGuide</a>
+      <a class="navbar-brand" href="http://localhost/projet_intensif/view/catalogue.php">WeGuide</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="http://localhost/projet_intensif/src/enregistrement.php">Inscription</a></li>
-      <li><a href="http://localhost/projet_intensif/src/connexion.php">Connexion</a></li>
+      <li class="active"><a href="http://localhost/projet_intensif/view/enregistrement.php">Inscription</a></li>
+      <li><a href="http://localhost/projet_intensif/view/connexion.php">Connexion</a></li>
     </ul>
   </div>
 </nav>     
@@ -29,7 +29,7 @@ Bienvenue sur la page d'administration de WeGuide
 </h3>
 </div>
 <div class="container">
-      <form class="form-horizontal" method="post" action="select_inscription.php" onSubmit="return sendRequest()">
+      <form class="form-horizontal" method="post" action="http://localhost/projet_intensif/app/select_inscription.php" onSubmit="return sendRequest()">
                <div class="form-group">
                     <label class="control-label col-sm-2" for="nom" >Nom de l'établissement:</label>
                     <div class="col-sm-10">

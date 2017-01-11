@@ -11,21 +11,21 @@
 </head>
 <body>
 <header>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default themeRouge">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="http://localhost/projet_intensif/view/catalogue.php">WeGuide</a>
+      <a class="navbar-brand" href="http://localhost/projet_intensif/view/catalogue.php" style="color:#FFFFFF">WeGuide</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="http://localhost/projet_intensif/view/enregistrement.php">Inscription</a></li>
-      <li><a href="http://localhost/projet_intensif/view/connexion.php">Connexion</a></li>
+      <li><a class="active" href="http://localhost/projet_intensif/view/enregistrement.php" style="color:#FFFFFF">Inscription</a></li>
+      <li><a href="http://localhost/projet_intensif/view/connexion.php" style="color:#FFFFFF">Connexion</a></li>
     </ul>
   </div>
 </nav>     
 </header>
 <div class="text-center">
 <h3>
-Bienvenue sur la page d'administration de WeGuide
+Veuillez saisir les informations demandées
 </h3>
 </div>
 <div class="container">
@@ -73,19 +73,13 @@ Bienvenue sur la page d'administration de WeGuide
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="id_etablissement">Id établissement :</label>
-                    <div class="col-sm-10">
-                    <input type="id_etablissement" class="form-control" name="id_etablissement" placeholder="Id établissement">
-                    </div>
-                </div>
-                <div class="form-group">
                     <label class="control-label col-sm-2" for="email">Mot de passe :</label>
                     <div class="col-sm-10">
                     <input type="password" class="form-control" name="password" placeholder="Mot de passe">
                     </div>
                </div>
                 <div class="text-center">
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-default">Inscription</button>
                 </div>
           </form>
         </div>

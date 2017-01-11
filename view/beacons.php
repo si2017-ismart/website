@@ -26,12 +26,13 @@
 </header>
 <div class="text-center">
 <h3>
-Bienvenue sur la page d'administration de WeGuide
+Liste des beacons
 </h3>
 </div>
 <div>
 <?php include('../app/affichage_liste_beacons.php'); ?>
 </div>
+<div style="padding-top:20px">
 <div>
 <form action="http://localhost/projet_intensif/view/ajouter_beacon.php" class="text-center">
   <input type="submit" class="btn btn-default" value="Ajouter un beacon"/>

@@ -5,29 +5,27 @@
     <meta name="AUTHOR" content="Maxime Lecottier">
     <meta name="DESCRIPTION" content="script php postgres">
     <meta name="KEYWORDS" content="Lecottier, informatique, ENSICAEN">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../webroot/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../webroot/css/catalogue.css" rel="stylesheet">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Admin</title>
 </head>
 <body>
 <header>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default themeRouge">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="http://localhost/projet_intensif/view/catalogue.php">WeGuide</a>
+      <a class="navbar-brand" href="http://localhost/projet_intensif/view/catalogue.php" style="color:#FFFFFF">WeGuide</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="http://localhost/projet_intensif/view/enregistrement.php">Inscription</a></li>
-      <li class="active"><a href="http://localhost/projet_intensif/view/connexion.php">Connexion</a></li>
+      <li><a href="http://localhost/projet_intensif/view/enregistrement.php" style="color:#FFFFFF">Inscription</a></li>
+      <li><a class="active" href="http://localhost/projet_intensif/view/connexion.php" style="color:#FFFFFF">Connexion</a></li>
     </ul>
   </div>
 </nav>     
 </header>
 <div class="text-center">
 <h3>
-Bienvenue sur la page d'administration de WeGuide
+Saisissez vos identifiants
 </h3>
 </div>
 <div class="container">
@@ -45,7 +43,7 @@ Bienvenue sur la page d'administration de WeGuide
                     </div>
                 </div>
                 <div class="text-center">
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-default">Connexion</button>
                 </div>
   </form>
           </div>

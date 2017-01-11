@@ -30,14 +30,14 @@ $res_beacon  = file_get_contents(
 	               $context_beacon);
 
 $res_beacon = json_decode($res_beacon);
+
 echo "<table border='1px' style='width:100%;'>";
-echo "<tr><th>Id établissement\t</th><th>Id beacon\t</th><th>Nom du beacon\t</th></tr>";
-foreach ($res_beacon->beacons as $value) {
-	echo "<tr>";
-	foreach ($value as $case) {
-		echo "<td>$case\t</td>";
-	}
-	echo "</tr>";
+echo "<tr><th>Id beacon\t</th><th>Nom beacon\t</th><th>Id établissement\t</th><th>Nom établissement\t</th></tr>";
+foreach ($res_beacon as $value) {
+	echo "<tr><td>$value->id_beacon\t</td>";
+	echo "<td>$value->nom\t</td>";
+	echo "<td>".$value->etablissement->id."\t</td>";
+	echo "<td>".$value->etablissement->nom."\t</td></tr>";
 }
 echo "</table>";
 ?>

@@ -17,8 +17,6 @@ $data_intervenant = array(
 		'password'=>$_POST['password']
 		);
 
-var_dump($data_intervenant);
-
 $opts_intervenant = array(
 	'http'=>array(
     'method' =>"POST",
@@ -27,20 +25,14 @@ $opts_intervenant = array(
   )
 );
 
-$url_intervenant = "http://localhost:3000/api/etablissements/intervenant/add";
+$url_intervenant = "http://localhost:3000/api/etablissements/intervenants/add";
 
 $context_intervenant  = stream_context_create($opts_intervenant);
-
-var_dump($context_intervenant);
 
 $res_intervenant  = file_get_contents(
 				   $url_intervenant, 
 	               false, 
 	               $context_intervenant);
-
-var_dump($res_intervenant);
-
  header('Location: http://localhost/projet_intensif/view/intervenants.php');
  exit();
-
 ?>

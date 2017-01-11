@@ -13,11 +13,11 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="http://localhost/projet_intensif/catalogue.php">WebSiteName</a>
+      <a class="navbar-brand" href="http://localhost/projet_intensif/src/catalogue.php">WebSiteName</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="http://localhost/projet_intensif/enregistrement.php">Inscription</a></li>
-      <li><a href="http://localhost/projet_intensif/connexion.<?php  ?>">Connexion</a></li>
+      <li><a href="http://localhost/projet_intensif/src/enregistrement.php">Inscription</a></li>
+      <li><a href="http://localhost/projet_intensif/src/connexion.<?php  ?>">Connexion</a></li>
     </ul>
   </div>
 </nav>  
@@ -26,6 +26,9 @@
 <h3>
 Bienvenue sur la page d'administration de WeGuide
 </h3>
+</div>
+<div class="text-center">
+    <a href="../img/logo.png"><img src="../img/logo_mini.png" alt="Logo WeGuide"/></a>
 </div>
 </body>
 </html>

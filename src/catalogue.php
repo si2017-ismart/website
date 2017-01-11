@@ -33,9 +33,5 @@ Bienvenue sur la page d'administration de WeGuide
 <div class="text-center">
     <img src="../img/logo_mini.png" alt="Logo WeGuide"/>
 </div>
-<footer>
-<nav class="navbar navbar-default" style="background-color: #Ac1325;">
-</nav>  
-</footer>
 </body>
 </html>

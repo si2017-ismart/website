@@ -17,25 +17,25 @@
       <a class="navbar-brand" href="http://localhost/projet_intensif/src/etablissement.php" style="color:#FFFFFF" style="font-family:verdana;">WeGuide</a>
     </div>
     <ul class="nav navbar-nav" >
-      <li><a href="http://localhost/projet_intensif/src/intervenants.php" style="color:#FFFFFF">Intervenants</a></li>
+      <li><a class="active" href="http://localhost/projet_intensif/src/intervenants.php" style="color:#FFFFFF">Intervenants</a></li>
       <li><a href="http://localhost/projet_intensif/src/beacons.php" style="color:#FFFFFF">Beacons</a></li>
     </ul>
   </div>
 </nav>  
 </header>
-<nav class="navbar navbar-default" style="background-color: #FFC692;margin:0">
 <div class="text-center">
 <h3>
 Bienvenue sur la page d'administration de WeGuide
 </h3>
 </div>
-</nav>
-<div class="text-center">
-    <img src="../img/logo_mini.png" alt="Logo WeGuide"/>
+<div>
+<?php include('affichage_liste_intervenants.php'); ?>
 </div>
-<footer>
-<nav class="navbar navbar-default" style="background-color: #Ac1325;">
-</nav>  
-</footer>
-</body>
+<div>
+<form action="http://localhost/projet_intensif/src/ajouter_intervenant.php" class="text-center">
+  <input type="submit" class="btn btn-default" value="Ajouter un intervenant"/>
+  </form>
+</div>
+</body>  
 </html>
+

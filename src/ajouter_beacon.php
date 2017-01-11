@@ -17,8 +17,8 @@
       <a class="navbar-brand" href="http://localhost/projet_intensif/src/etablissement.php" style="color:#FFFFFF" style="font-family:verdana;">WeGuide</a>
     </div>
     <ul class="nav navbar-nav" >
-      <li><a href="http://localhost/projet_intensif/src/ajouter_intervenant.php" style="color:#FFFFFF">Ajouter un intervenant</a></li>
-      <li><a class="active" href="http://localhost/projet_intensif/src/ajouter_beacon.php" style="color:#FFFFFF">Ajouter un beacon</a></li>
+      <li><a href="http://localhost/projet_intensif/src/intervenants.php" style="color:#FFFFFF">Intervenants</a></li>
+      <li><a class="active" href="http://localhost/projet_intensif/src/beacons.php" style="color:#FFFFFF">Beacons</a></li>
     </ul>
   </div>
 </nav>  

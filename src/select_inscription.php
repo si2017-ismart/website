@@ -56,10 +56,19 @@ $url3  = "http://localhost:3000/api/etablissements/createAdmin";
 
 $context_eta  = stream_context_create($opts22);
 
-$res  = file_get_contents(
+$res_eta  = file_get_contents(
 			   $url3, 
                false, 
                $context_eta);
 
-var_dump($res);
+var_dump($res_eta);
+
+if ($res_eta){
+	session_start();
+	if(!isset($_SESSION["etablissement"]["id"])){
+		$_SESSION["etablissement"]["id"] = $res;
+	}
+  	header('Location: http://localhost/projet_intensif/src/etablissement.php');
+  	exit();
+}
 ?>

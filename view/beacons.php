@@ -39,7 +39,16 @@ Liste des beacons
   <input type="submit" class="btn btn-default" value="Ajouter un beacon"/>
   </form>
 </div>
-<footer style="background:#EE741B; color:#FFFFFF; position:absolute; bottom:0; left:0; right:0; text-align:center">
+<div class="container" style="margin-bottom: 200px">
+<?php include('../app/affichage_carte_beacons.php'); ?>
+</div>
+ <!-- <div id="fond_carte" class="col-sm-6 col-sm-offset-3" style="background-image: url(../webroot/img/plan.jpg);width:650px;height:450px;background-size: 650px;background-repeat: no-repeat;background-position: center;">
+    <div class="beacon1" style="background-color:red; width: 50px;height: 50px;border-radius: 50px;opacity: 0.5;position:relative;top:30px;left:<?php echo(650/2);?>px;">
+    </div>
+    <div class="beacon2" style="background-color:red; width: 550px;height: 550px;border-radius: 550px;opacity: 0.5;position:relative;top:<?php echo(450/2);?>px;left:<?php echo(650/2);?>px;">
+    </div>
+ </div> -->
+<footer style="background:#EE741B; color:#FFFFFF; position:fixed; bottom:0; left:0; right:0; text-align:center;">
     &copyWeGuide
 </footer>
 </body>

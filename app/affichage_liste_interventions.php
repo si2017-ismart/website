@@ -32,14 +32,23 @@ $res_intervention  = file_get_contents(
 $res_intervention = json_decode($res_intervention);
 
 echo "<table class='table'>";
-echo "<thead><tr><th>Date\t</th><th>Duree\t</th><th>Intervenant\t</th><th>Etablissement\t</th><th>Satisfaction\t</th><th>Profil utilisateur\t</th><th>Id beacon</th></tr><thead>";
+echo "<thead><tr><th>Date\t</th><th>Duree\t</th><th>Intervenant\t</th><th>Satisfaction\t</th><th>Profil utilisateur\t</th><th>Id beacon</th></tr><thead>";
 foreach ($res_intervention as $value) {
 	echo "<tr><td>$value->date\t</td>";
 	echo "<td>$value->duree\t</td>";
 	echo "<td>".$value->intervenant->prenom." ".$value->intervenant->nom."\t</td>";
-	echo "<td>".$value->etablissement->nom."\t</td>";
-	echo "<td>$value->satisfaction\t</td>";
-	echo "<td>".$value->user->type."\t</td>";
+	if (isset($value->satisfaction)){
+		echo "<td>$value->satisfaction\t</td>";
+	}
+	else{
+		echo "<td></td>";
+	}
+	if (isset($value->user->type)){
+		echo "<td>".$value->user->type."\t</td>";
+	}
+	else{
+		echo "<td></td>";
+	}
 	echo "<td>".$value->beacon->id."\t</td></tr>";
 }
 echo "</table>";

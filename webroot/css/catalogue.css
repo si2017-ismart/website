@@ -1,0 +1,51 @@
+#fond_carte{
+	width: 650px;
+}
+
+#fond_carte img{
+	position: relative;
+	float:left;
+	top: 0px;
+}
+
+.beacon_circle:hover
+{
+	background-color: #A91010;
+	-webkit-transition: background-color 0.7s; /* Safari */
+    transition: background-color 0.7s;
+}
+
+.beacon_circle
+{
+	background-color: red;
+	-webkit-transition: background-color 0.7s; /* Safari */
+    transition: background-color 0.7s;
+}
+
+.tooltip_circle
+{
+	display: none;
+	opacity: 0;
+	-webkit-transition: opacity 0.7s; /* Safari */
+    transition: opacity 0.7s;
+}
+
+.beacon_circle:hover>.tooltip_circle
+{
+	display: block;
+	position:absolute;
+	top: 40%;
+	left: 75px;
+	width: 200px;
+	color: black;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: white;
+	opacity: 0.95;
+	-webkit-transition: opacity 0.7s; /* Safari */
+    transition: opacity 0.7s;
+
+}

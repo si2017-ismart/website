@@ -19,6 +19,7 @@
     <ul class="nav navbar-nav" >
       <li><a class="active" href="http://localhost/projet_intensif/view/intervenants.php" style="color:#000000; background-color: #FFFFFF !important">Intervenants</a></li>
       <li><a href="http://localhost/projet_intensif/view/beacons.php" style="color:#FFFFFF">Beacons</a></li>
+      <li><a href="http://localhost/projet_intensif/app/deconnexion.php" style="color:#FFFFFF; left:1050px">Deconnexion</a></li>
     </ul>
   </div>
 </nav>

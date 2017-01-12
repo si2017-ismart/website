@@ -30,8 +30,8 @@ $res_intervenant  = file_get_contents(
 	               $context_intervenant);
 
 $res_intervenant = json_decode($res_intervenant);
-echo "<table border='1px' style='width:100%;'>";
-echo "<tr><th>Nom\t</th><th>Prenom\t</th><th>Identifiant\t</th><th>Password\t</th><th>Dispo\t</th><th>Id\t</th></tr>";
+echo "<table class='table'>";
+echo "<thead><tr><th>Nom\t</th><th>Prenom\t</th><th>Identifiant\t</th><th>Password\t</th><th>Disponibilité\t</th><th>Id\t</th></tr><thead>";
 foreach ($res_intervenant->intervenants as $value) {
 	echo "<tr>";
 	foreach ($value as $case) {

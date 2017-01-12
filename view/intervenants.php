@@ -29,7 +29,7 @@
 Liste des intervenants
 </h3>
 </div>
-<div>
+<div class="container">
 <?php include('../app/affichage_liste_intervenants.php'); ?>
 </div>
 <div style="padding-top:20px">

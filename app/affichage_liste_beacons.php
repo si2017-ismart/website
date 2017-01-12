@@ -31,8 +31,8 @@ $res_beacon  = file_get_contents(
 
 $res_beacon = json_decode($res_beacon);
 
-echo "<table border='1px' style='width:100%;'>";
-echo "<tr><th>Id beacon\t</th><th>Nom beacon\t</th><th>Id établissement\t</th><th>Nom établissement\t</th></tr>";
+echo '<table class="table">';
+echo "<thead><tr><th>Id beacon\t</th><th>Nom beacon\t</th><th>Id établissement\t</th><th>Nom établissement\t</th></tr><thead>";
 foreach ($res_beacon as $value) {
 	echo "<tr><td>$value->id_beacon\t</td>";
 	echo "<td>$value->nom\t</td>";

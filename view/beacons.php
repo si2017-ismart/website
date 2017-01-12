@@ -29,7 +29,7 @@
 Liste des beacons
 </h3>
 </div>
-<div>
+<div class="container">
 <?php include('../app/affichage_liste_beacons.php'); ?>
 </div>
 <div style="padding-top:20px">

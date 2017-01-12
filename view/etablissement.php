@@ -11,7 +11,7 @@
 </head>
 <body>
 <header>
-<nav class="navbar navbar-default themeRouge">
+<nav class="navbar navbar-default" style="background-color: #10607B; margin:0">
   <div class="container-fluid" >
     <div class="navbar-header">
       <a class="navbar-brand" href="http://localhost/projet_intensif/view/etablissement.php" style="color:#FFFFFF" style="font-family:verdana;">WeGuide</a>
@@ -22,17 +22,18 @@
       <li><a href="http://localhost/projet_intensif/app/deconnexion.php" style="color:#FFFFFF">Deconnexion</a></li>
     </ul>
   </div>
-</nav>  
+</nav>
 </header>
-<nav class="navbar navbar-default" style="background-color: #FFC692;margin:0">
-<div class="text-center">
+<div class="text-center" style="background-color: #2BBAED; color:#FFFFFF; margin-bottom:20px; padding:1px">
 <h3>
 Bienvenue sur la page d'administration de WeGuide
 </h3>
 </div>
-</nav>
 <div class="text-center">
     <img src="../webroot/img/logo_mini.png" alt="Logo WeGuide"/>
 </div>
+<footer style="background:#EE741B; color:#FFFFFF; position:absolute; bottom:0; left:0; right:0; text-align:center">
+    &copyWeGuide
+</footer>
 </body>
 </html>

@@ -11,19 +11,19 @@
 </head>
 <body>
 <header>
-<nav class="navbar navbar-default themeRouge">
+<nav class="navbar navbar-default" style="background-color: #10607B; margin:0">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="http://localhost/projet_intensif/view/catalogue.php" style="color:#FFFFFF">WeGuide</a>
     </div>
     <ul class="nav navbar-nav">
       <li><a href="http://localhost/projet_intensif/view/enregistrement.php" style="color:#FFFFFF">Inscription</a></li>
-      <li><a class="active" href="http://localhost/projet_intensif/view/connexion.php" style="color:#FFFFFF">Connexion</a></li>
+      <li><a class="active" href="http://localhost/projet_intensif/view/connexion.php" style="color:#000000; background-color: #FFFFFF !important">Connexion</a></li>
     </ul>
   </div>
-</nav>     
+</nav>
 </header>
-<div class="text-center">
+<div class="text-center" style="background-color: #2BBAED; color:#FFFFFF; margin-bottom:20px; padding:1px">
 <h3>
 Saisissez vos identifiants
 </h3>
@@ -47,6 +47,8 @@ Saisissez vos identifiants
                 </div>
   </form>
           </div>
-     </body>  
+          <footer style="background:#EE741B; color:#FFFFFF; position:absolute; bottom:0; left:0; right:0; text-align:center">
+              &copyWeGuide
+          </footer>
+     </body>
 </html>
-

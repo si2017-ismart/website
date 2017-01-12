@@ -10,9 +10,12 @@ else{
 }
 
 $data_beacon = array(
+		'id_etablissement'=>$id_etablissement,
 		'id'=>$_POST['identifiant'],
 		'nom'=>$_POST['nom'],
-		'id_etablissement'=>$id_etablissement
+		'xPosition'=>$_POST['x'],
+		'yPosition'=>$_POST['y'],
+		'portee'=>$_POST['portee']
 		);
 
 $opts_beacon = array(
@@ -23,7 +26,7 @@ $opts_beacon = array(
   )
 );
 
-$url_beacon = "http://localhost:3000/api/beacons/add";
+$url_beacon = "http://192.168.12.228:3000/api/beacons/add";
 
 $context_beacon  = stream_context_create($opts_beacon);
 

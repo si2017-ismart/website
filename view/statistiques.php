@@ -18,8 +18,8 @@
       </div>
       <ul class="nav navbar-nav" >
         <li><a href="http://localhost/projet_intensif/view/intervenants.php" style="color:#FFFFFF" onmouseover="this.style.background='#FFFFFF';this.style.color='#000000'" onmouseout="this.style.background='';this.style.color='#FFFFFF'">Intervenants</a></li>
-        <li><a href="http://localhost/projet_intensif/view/beacons.php" style="color:#000000; background-color: #FFFFFF !important">Beacons</a></li>
-        <li><a href="http://localhost/projet_intensif/view/statistiques.php" style="color:#FFFFFF" onmouseover="this.style.background='#FFFFFF';this.style.color='#000000'" onmouseout="this.style.background='';this.style.color='#FFFFFF'">Statistiques</a></li>
+        <li><a href="http://localhost/projet_intensif/view/beacons.php" style="color:#FFFFFF" onmouseover="this.style.background='#FFFFFF';this.style.color='#000000'" onmouseout="this.style.background='';this.style.color='#FFFFFF'">Beacons</a></li>
+        <li><a href="http://localhost/projet_intensif/view/statistiques.php" style="color:#000000; background-color: #FFFFFF !important">Statistiques</a></li>
         <li><a href="http://localhost/projet_intensif/app/deconnexion.php" style="color:#FFFFFF; left:740%" onmouseover="this.style.background='#FFFFFF';this.style.color='#000000'" onmouseout="this.style.background='';this.style.color='#FFFFFF'">Déconnexion</a></li>
       </ul>
     </div>
@@ -27,18 +27,13 @@
 </header>
 <div class="text-center" style="background-color: #2BBAED; color:#FFFFFF; margin:0; padding:1px">
 <h3>
-Liste des beacons
+Liste des interventions
 </h3>
 </div>
 <div class="container">
-<?php include('../app/affichage_liste_beacons.php'); ?>
+<?php include('../app/affichage_liste_interventions.php'); ?>
 </div>
 <div style="padding-top:20px">
-<div>
-<form action="http://localhost/projet_intensif/view/ajouter_beacon.php" class="text-center">
-  <input type="submit" class="btn btn-default" value="Ajouter un beacon"/>
-  </form>
-</div>
 <footer style="background:#EE741B; color:#FFFFFF; position:absolute; bottom:0; left:0; right:0; text-align:center">
     &copyWeGuide
 </footer>

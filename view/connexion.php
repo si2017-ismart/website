@@ -29,7 +29,7 @@ Saisissez vos identifiants
 </h3>
 </div>
 <div class="container">
- <form class="form-horizontal" method="post" action="http://localhost/projet_intensif/app/select_connexion.php" onSubmit="return sendRequest()">
+ <form class="form-horizontal" method="post" action="http://localhost/projet_intensif/app/select_connexion.php" onSubmit="return sendRequest()" style="margin-top:50px">
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="identifiant">Identifiant :</label>
                     <div class="col-sm-10">
@@ -42,7 +42,7 @@ Saisissez vos identifiants
                         <input type="password" class="form-control" name="password" placeholder="Mot de passe">
                     </div>
                 </div>
-                <div class="text-center">
+                <div class="text-center" style="margin-top: 30px">
                     <button type="submit" class="btn btn-default">Connexion</button>
                 </div>
   </form>

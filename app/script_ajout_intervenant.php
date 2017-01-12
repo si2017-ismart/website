@@ -25,7 +25,7 @@ $opts_intervenant = array(
   )
 );
 
-$url_intervenant = "http://localhost:3000/api/etablissements/intervenants/add";
+$url_intervenant = "http://192.168.12.228:3000/api/etablissements/intervenants/add";
 
 $context_intervenant  = stream_context_create($opts_intervenant);
 

@@ -20,9 +20,9 @@ $opts2 = array(
   )
 );
 
-$url1 = "http://localhost:3000/api/beacons";
-$url  = "http://localhost:3000/api/etablissements/add";
-$url_interv  = "http://localhost:3000/api/intervenants/add";
+$url1 = "http://192.168.12.228:3000/api/beacons";
+$url  = "http://192.168.12.228:3000/api/etablissements/add";
+$url_interv  = "http://192.168.12.228:3000/api/intervenants/add";
 
 $context  = stream_context_create($opts2);
 
@@ -52,7 +52,7 @@ $opts22 = array(
   )
 );
 
-$url3  = "http://localhost:3000/api/etablissements/createAdmin";
+$url3  = "http://192.168.12.228:3000/api/etablissements/createAdmin";
 
 $context_eta  = stream_context_create($opts22);
 

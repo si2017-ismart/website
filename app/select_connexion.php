@@ -15,7 +15,7 @@ $opts2 = array(
   )
 );
 
-$url  = "http://localhost:3000/api/etablissements/loginAdmin";
+$url  = "http://192.168.12.228:3000/api/etablissements/loginAdmin";
 
 $context  = stream_context_create($opts2);
 

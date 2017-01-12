@@ -20,7 +20,7 @@ $opts_beacon = array(
   )
 );
 
-$url_beacon = "http://localhost:3000/api/beacons/getByEtablissement/".$id_etablissement;
+$url_beacon = "http://192.168.12.228:3000/api/beacons/getByEtablissement/".$id_etablissement;
 
 $context_beacon  = stream_context_create($opts_beacon);
 

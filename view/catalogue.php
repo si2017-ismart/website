@@ -14,11 +14,11 @@
 <nav class="nav-justified" style="background-color: #10607B; margin:0">
   <div class="container-fluid" >
     <div class="navbar-header">
-      <a class="navbar-brand" href="http://localhost/projet_intensif/view/catalogue.php" style="color:#FFFFFF" style="font-family:verdana;" >WeGuide</a>
+      <a class="navbar-brand" href="http://localhost/projet_intensif/view/catalogue.php" style="color:#FFFFFF" style="font-family:verdana;" onmouseover="this.style.background='#FFFFFF';this.style.color='#000000'" onmouseout="this.style.background='';this.style.color='#FFFFFF'" >WeGuide</a>
     </div>
     <ul class="nav navbar-nav" >
-      <li><a href="http://localhost/projet_intensif/view/enregistrement.php" style="color:#FFFFFF">Inscription</a></li>
-      <li><a href="http://localhost/projet_intensif/view/connexion.php" style="color:#FFFFFF">Connexion</a></li>
+      <li><a href="http://localhost/projet_intensif/view/enregistrement.php" style="color:#FFFFFF" onmouseover="this.style.background='#FFFFFF';this.style.color='#000000'" onmouseout="this.style.background='';this.style.color='#FFFFFF'">Inscription</a></li>
+      <li><a href="http://localhost/projet_intensif/view/connexion.php" style="color:#FFFFFF" onmouseover="this.style.background='#FFFFFF';this.style.color='#000000'" onmouseout="this.style.background='';this.style.color='#FFFFFF'">Connexion</a></li>
     </ul>
   </div>
 </nav>

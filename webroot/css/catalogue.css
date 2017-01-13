@@ -49,3 +49,71 @@
     transition: opacity 0.7s;
 
 }
+
+.nav-justified{
+	background-color: #10607B;
+	margin:0
+}
+
+.navbar-brand{
+	color:#FFFFFF;
+	style="font-family:verdana;
+}
+
+.navbar-brand:hover{
+	color:#000000;
+	background-color: #FFFFFF;
+}
+
+.navbar-brand:not( :hover){
+	color:#FFFFFF;
+	background-color: #10607B;
+}
+
+#titre{
+	background-color: #2BBAED;
+	color:#FFFFFF;
+	margin:0;
+	padding:1px;
+	margin-bottom:20px;
+}
+
+footer{
+	background:#EE741B;
+	color:#FFFFFF;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	text-align:center
+}
+
+#deconnexion{
+	color:#FFFFFF;
+	left:740%;
+}
+
+#deconnexion:hover{
+	color:#000000;
+	background-color: #FFFFFF;
+}
+
+#inscription:hover{
+	color: #000000 !important;
+	background-color: #FFFFFF;
+}
+
+#inscription:not( :hover){
+	color:#FFFFFF;
+	background-color: #10607B;
+}
+
+#connexion:hover{
+	color: #000000 !important;
+	background-color: #FFFFFF;
+}
+
+#connexion:not( :hover){
+	color:#FFFFFF;
+	background-color: #10607B;
+}

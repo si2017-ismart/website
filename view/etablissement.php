@@ -11,21 +11,21 @@
 </head>
 <body>
 <header>
-<nav class="nav-justified" style="background-color: #10607B; margin:0">
+<nav class="nav-justified">
   <div class="container-fluid" >
     <div class="navbar-header">
-      <a class="navbar-brand" href="http://localhost/projet_intensif/view/etablissement.php" style="color:#FFFFFF" onmouseover="this.style.background='#FFFFFF';this.style.color='#000000'" onmouseout="this.style.background='';this.style.color='#FFFFFF'" style="font-family:verdana;">WeGuide</a>
+      <a class="navbar-brand" href="http://localhost/projet_intensif/view/etablissement.php">WeGuide</a>
     </div>
     <ul class="nav navbar-nav" >
-      <li><a href="http://localhost/projet_intensif/view/intervenants.php" style="color:#FFFFFF" onmouseover="this.style.background='#FFFFFF';this.style.color='#000000'" onmouseout="this.style.background='';this.style.color='#FFFFFF'">Intervenants</a></li>
-      <li><a href="http://localhost/projet_intensif/view/beacons.php" style="color:#FFFFFF" onmouseover="this.style.background='#FFFFFF';this.style.color='#000000'" onmouseout="this.style.background='';this.style.color='#FFFFFF'">Beacons</a></li>
-      <li><a href="http://localhost/projet_intensif/view/statistiques.php" style="color:#FFFFFF" onmouseover="this.style.background='#FFFFFF';this.style.color='#000000'" onmouseout="this.style.background='';this.style.color='#FFFFFF'">Statistiques</a></li>
-      <li><a href="http://localhost/projet_intensif/app/deconnexion.php" style="color:#FFFFFF; left:740%" onmouseover="this.style.background='#FFFFFF';this.style.color='#000000'" onmouseout="this.style.background='';this.style.color='#FFFFFF'">Déconnexion</a></li>
+      <li><a id="connexion" href="http://localhost/projet_intensif/view/intervenants.php" style="color:#FFFFFF">Intervenants</a></li>
+      <li><a id="connexion" href="http://localhost/projet_intensif/view/beacons.php" style="color:#FFFFFF">Beacons</a></li>
+      <li><a id="connexion" href="http://localhost/projet_intensif/view/statistiques.php" style="color:#FFFFFF">Statistiques</a></li>
+      <li><a id="deconnexion" href="http://localhost/projet_intensif/app/deconnexion.php">Déconnexion</a></li>
     </ul>
   </div>
 </nav>
 </header>
-<div class="text-center" style="background-color: #2BBAED; color:#FFFFFF; margin:0; padding:1px">
+<div class="text-center" id="titre">
 <h3>
 Bienvenue sur la page d'administration de WeGuide
 </h3>
@@ -33,7 +33,7 @@ Bienvenue sur la page d'administration de WeGuide
 <div class="text-center">
     <img src="../webroot/img/logo_mini.png" alt="Logo WeGuide"/>
 </div>
-<footer style="background:#EE741B; color:#FFFFFF; position:absolute; bottom:0; left:0; right:0; text-align:center">
+<footer>
     &copyWeGuide
 </footer>
 </body>

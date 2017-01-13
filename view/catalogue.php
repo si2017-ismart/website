@@ -11,19 +11,19 @@
 </head>
 <body>
 <header style="margin:0">
-<nav class="nav-justified" style="background-color: #10607B; margin:0">
+<nav class="nav-justified">
   <div class="container-fluid" >
     <div class="navbar-header">
-      <a class="navbar-brand" href="http://localhost/projet_intensif/view/catalogue.php" style="color:#FFFFFF" style="font-family:verdana;" onmouseover="this.style.background='#FFFFFF';this.style.color='#000000'" onmouseout="this.style.background='';this.style.color='#FFFFFF'" >WeGuide</a>
+      <a class="navbar-brand" href="http://localhost/projet_intensif/view/catalogue.php">WeGuide</a>
     </div>
     <ul class="nav navbar-nav" >
-      <li><a href="http://localhost/projet_intensif/view/enregistrement.php" style="color:#FFFFFF" onmouseover="this.style.background='#FFFFFF';this.style.color='#000000'" onmouseout="this.style.background='';this.style.color='#FFFFFF'">Inscription</a></li>
-      <li><a href="http://localhost/projet_intensif/view/connexion.php" style="color:#FFFFFF" onmouseover="this.style.background='#FFFFFF';this.style.color='#000000'" onmouseout="this.style.background='';this.style.color='#FFFFFF'">Connexion</a></li>
+      <li><a id="inscription" href="http://localhost/projet_intensif/view/enregistrement.php" style="color:#FFFFFF">Inscription</a></li>
+      <li><a id="connexion" href="http://localhost/projet_intensif/view/connexion.php" style="color:#FFFFFF">Connexion</a></li>
     </ul>
   </div>
 </nav>
 </header>
-<div class="text-center" style="background-color: #2BBAED; color:#FFFFFF; margin:0; padding:1px">
+<div class="text-center" id="titre">
 <h3>
 Bienvenue sur la page d'administration de WeGuide
 </h3>
@@ -31,7 +31,7 @@ Bienvenue sur la page d'administration de WeGuide
 <div class="text-center">
     <img src="../webroot/img/logo_mini.png" alt="Logo WeGuide"/>
 </div>
-<footer style="background:#EE741B; color:#FFFFFF; position:absolute; bottom:0; left:0; right:0; text-align:center">
+<footer>
     &copyWeGuide
 </footer>
 </body>

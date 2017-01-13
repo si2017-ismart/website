@@ -34,7 +34,7 @@ $res  = file_get_contents(
                $context);
 
 $res = json_decode($res);
-var_dump($res); //id ou erreur TODO
+var_dump($res);
 
 $data_eta = array(
 		'id'=>$res,
